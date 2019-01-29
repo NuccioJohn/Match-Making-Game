@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li id="firstStar"><i class="fa fa-star"></i></li>
+        		<li id="secondStar"><i class="fa fa-star"></i></li>
+                <li id="thirdStar"><i class="fa fa-star"></i></li>
+                <li id="fourthStar"><i class="fa fa-star"></i></li>
+        		<li id="fifthStar"><i class="fa fa-star"></i></li>
+        	</ul>
+
+            <span class="moves">0</span> Moves
+            
+    <div class="clockbox">
+        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 600 600">
+           <g id="face">
+                <circle id="circleMarker" class="circle" cx="300" cy="300" r="253.9"/>
+                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+            </g>
+            <g id="hour">
+                <path class="hour-arm" d="M300.5 298V142"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="minute">
+                <path class="minute-arm" d="M300.5 298V67"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="second">
+                <path class="second-arm" d="M300.5 350V55"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+        </svg>
+    </div><!-- .clockbox -->
+
+    <span class="timerDisplay">180 Seconds</span>
+
+
+            <div class="restart">
+        		<i class="fa fa-repeat" onClick="restartStart()"></i>
+        	</div>
+        </section>
+
+        <ul class="deck">
+            <!-- <li class="card match">
+                <i class="fa "></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card match">
+                <i class="fa"></i>
+            </li>
+            <li class="card open show">
+                <i class="fa"></i>
+            </li>
+            <li class="card">
+                <i class="fa"></i>
+            </li>
+            <li class="card show">
+                <i class="fa"></i>
+            </li>
+            <li class="card open show">
+                <i class="fa"></i>
+            </li> -->
+        </ul>
+    </div>
+
+    <script src="js/app.js"></script>
+    <!--CLock-->
+    <script src="js/clock.js" defer></script>
+    <!-- //sweet alert -->
+    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
